@@ -22,7 +22,7 @@ $arrayOfSkill=(explode(",",$question_skill));
     if(strlen($question_body) == 0)
         print('Please enter a sentence<br>');
     elseif (strlen($question_body)>500)
-        print('Must be less than 500 characters');
+        print('Must be less than 500 characters<br>');
     else
         print("$question_body<br>");
 
@@ -30,9 +30,9 @@ $arrayOfSkill=(explode(",",$question_skill));
 
 
     if(count($arrayOfSkill) <2)
-        print('Needs to have 2 or more skills');
+        print('Needs to have 2 or more skills<br>');
     else
-        print_r($arrayOfSkill);
+        print_r("$arrayOfSkill<br>");
 
 
     ?>
