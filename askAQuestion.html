@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask a Question</title>
+
+</head>
+<body>
+    <body style="background-color: lavender">
+<font color = "#0000cd"><h1>Post a Question</h1></font>
+    <form action ="askAQuestion.php" method="post">
+        <table>
+            <tr>
+                <td>Question Name: </td>
+                <td><input type="text" name="questionName"></td>
+            </tr>
+            <tr>
+                <td>Question Skill: </td>
+                <td><input type="text" name="questionSkill"></td>
+            </tr>
+            <tr>
+                <td>Question Body</td>
+                <td>
+                    <textarea name="Question" rows="6" cols="60"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="post"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
