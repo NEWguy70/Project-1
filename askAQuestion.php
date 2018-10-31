@@ -2,12 +2,13 @@
 $question_name = $_POST['questionName'];
 $question_skill = $_POST['questionSkill'];
 $question_body = $_POST['Question'];
-$arrayOfSkill=(explode(",",$question_skill));
+$arrayOfSkill = explode(",",$question_skill);
 ?>
 
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+</head>
 <body>
 <main>
     <?php
@@ -27,12 +28,10 @@ $arrayOfSkill=(explode(",",$question_skill));
         print("$question_body<br>");
 
 
-
-
-    if(count($arrayOfSkill) <2)
-        print('Needs to have 2 or more skills<br>');
+    if(count($arrayOfSkill) < 2)
+        print('Need to have 2 or more skills seperated by a comma<br>');
     else
-        print_r("$arrayOfSkill<br>");
+        print_r($arrayOfSkill);
 
 
     ?>
