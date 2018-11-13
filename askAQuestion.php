@@ -1,17 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="login.css"></head>
+<body>
+<main>
+
+    <div class="Square">
 <?php
 $question_name = $_POST['questionName'];
 $question_skill = $_POST['questionSkill'];
 $question_body = $_POST['Question'];
 $arrayOfSkill = explode(",",$question_skill);
-?>
 
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-<main>
-    <?php
+
     if (strlen($question_name) == 0)
         print('Please enter a title<br>');
     elseif (strlen($question_name)<3)
