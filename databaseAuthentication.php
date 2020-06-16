@@ -1,7 +1,7 @@
 <?php
 echo "<h1>PDO demo!</h1>";
-$username = 'ra563';
-$password = 'cqsGFq08V';
+$username = '';
+$password = '';
 $hostname = 'sql1.njit.edu';
 $dsn = "mysql:host=$hostname;dbname=$username";
 try {
